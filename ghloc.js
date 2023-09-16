@@ -18,7 +18,7 @@ Usage:
     const branch = 'master';
     const files = [];
     var total = 0;
-    let p = 1;
+    var p = 1;
     do {
         /* examples: path:src language:js language:python NOT path:generated
            see: https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax */
