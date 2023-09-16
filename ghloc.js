@@ -1,6 +1,5 @@
 javascript:
 /*
-
 Name: /GH LOC#
 Url: https://github.com/gabrielsroka/ghloc/blob/main/ghloc.js
 
