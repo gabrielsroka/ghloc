@@ -8,9 +8,9 @@ Setup:
 
 Usage:
 1. sign in to GH and navigate to a repo
-2. open the dev console (eg, F12 on Windows)
+2. open the browser's devtools console (eg, F12 on Windows)
 3. click the bookmarklet
-4. results in the console
+4. see results in the console
 */
 (async function () {
     console.clear();
