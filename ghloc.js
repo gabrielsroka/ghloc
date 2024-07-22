@@ -20,7 +20,7 @@ Usage:
     var total = 0;
     var p = 1;
     do {
-        /* examples: path:src language:js language:python NOT path:generated
+        /* examples for q (space-delimited): path:src language:js language:python NOT path:generated
            see: https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax */
         const r = await fetch(`/search?q=repo:${repo}&type=code&p=${p++}`);
         var page = await r.json();
