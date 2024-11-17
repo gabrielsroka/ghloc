@@ -1,5 +1,6 @@
 javascript:
 /*
+
 Name: /GH LOC#
 Url: https://github.com/gabrielsroka/ghloc/blob/main/ghloc.js
 
@@ -22,7 +23,7 @@ Usage:
     do {
         /* examples for q (space-delimited): path:src language:js language:python NOT path:generated
            see: https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax */
-        const r = await fetch(`/search?q=repo:${repo}&type=code&p=${p++}`);
+        const r = await fetch(`/search?q=repo:${repo}&type=code&p=${p++}`, {headers: {accept: 'application/json'}});
         var page = await r.json();
         await Promise.all(page.payload.results.map(async item => {
             const r = await fetch(`https://raw.githubusercontent.com/${repo}/${branch}/` + item.path);
